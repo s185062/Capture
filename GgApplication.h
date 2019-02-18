@@ -783,7 +783,7 @@ struct GgApplication
     //
     // ウィンドウを閉じるべきかを判定する
     //
-    bool shouldClose()
+    bool shouldClose() const
     {
       // ウィンドウを閉じるべきなら真を返す
       return glfwWindowShouldClose(window) != GLFW_FALSE;
